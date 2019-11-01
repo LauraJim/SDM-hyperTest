@@ -1,4 +1,4 @@
-# Laura Jiménez & Jorge Soberón
+# Laura Jimenez 
 # First version: May, 2018
 
 ### FUNCTIONS ----------

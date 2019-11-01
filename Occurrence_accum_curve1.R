@@ -1,4 +1,4 @@
-# Laura Jiménez & Jorge Soberón
+# Laura Jimenez 
 # First version: May, 2018
 
 ### FUNCTIONS ----------
@@ -11,7 +11,7 @@
 # 'null.mod' -> indicate the distribution used as null model, possible values are "binomial" and "hypergeom".
 # 'conlev' -> probability that indicates the confidence level to be drawn around the null model.
 #             When 'flag=F', 'conlev' must be equal to 0.
-# 'flag' -> if FALSE, values are caluculated and returned but not plotted
+# 'flag' -> if FALSE, values are calculated and returned but not plotted
 
 ## Difference between 'accum.occ' and 'accum.occ1': 'output.mod' and 'occ.pnts' format is different, and,
 ## the second one don't produce plots in environmental space.
