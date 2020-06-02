@@ -128,14 +128,14 @@ accum.occ1 <- function(sp.name,output.mod,occ.pnts,null.mod,conlev=0,flag=T){
         if(null.mod == "hypergeom") legmod <- paste("Hypergeometric CI, p =",conlev)
       }
       # under non-random selection hypothesis
-      lines(mxnt.acc[ntt],occ.acc[ntt],type="s",col="blue",lwd=2)
+      lines(mxnt.acc[ntt],occ.acc[ntt],type="o",col="blue",lwd=2)
       if(max(ntt)<=50){
         text(mxnt.acc[ntt],occ.acc[ntt],labels=occ.acc,pos=2)
       } else {
         rind <- seq(1,length(ntt),by=200) #%#
         text(mxnt.acc[rind],occ.acc[rind],labels=occ.acc[rind],pos=2)
       }
-      legend("bottomright",legend=c(sp.name,"Random counts",legmod,"SDM counts"),lwd=2,col=c("white","red","skyblue3","blue"),bty="n")
+      legend("bottomright",legend=c(sp.name,"Random counts",legmod,"SDM counts"),lwd=2,col=c("white","red","gray","blue"),bty="n")
     }
     resul <- cbind(occ.acc,mxnt.acc,round((occ.acc/nocc)*100,2),round((mxnt.acc/nmxnt)*100,2))
     colnames(resul) <- c("No.occurrences","No.cells","%Gained Occ","%Area")
