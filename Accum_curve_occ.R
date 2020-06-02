@@ -190,7 +190,7 @@ accum.occ <- function(sp.name,output.mod,occ.pnts,null.mod,conlev=0,bios=0){
       if(null.mod == "hypergeom") legmod <- paste("Hypergeometric CI, p =",conlev)
     }
   # under non-random selection hypothesis
-    lines(mxnt.acc[ntt],occ.acc[ntt],type="s",col="blue",lwd=2)
+    lines(mxnt.acc[ntt],occ.acc[ntt],type="o",col="blue",lwd=2)
     if(max(ntt)<=50){
       text(mxnt.acc[ntt],occ.acc[ntt],labels=occ.acc,pos=2)
     } else {
