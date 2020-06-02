@@ -197,7 +197,7 @@ accum.occ <- function(sp.name,output.mod,occ.pnts,null.mod,conlev=0,bios=0){
       rind <- seq(1,length(ntt),by=200) #%#
       text(mxnt.acc[rind],occ.acc[rind],labels=occ.acc[rind],pos=2)
     }
-    legend("bottomright",legend=c(sp.name,"Random counts",legmod,"SDM counts"),lwd=2,col=c("white","red","skyblue3","blue"),bty="n")
+    legend("bottomright",legend=c(sp.name,"Random counts",legmod,"SDM counts"),lwd=2,col=c("white","red","gray","blue"),bty="n")
   resul <- cbind(occ.acc,mxnt.acc,round((occ.acc/nocc)*100,2),round((mxnt.acc/nmxnt)*100,2))
   colnames(resul) <- c("No.occurrences","No.cells","%Gained Occ","%Area")
   return(resul)
