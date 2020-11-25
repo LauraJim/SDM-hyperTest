@@ -1,4 +1,4 @@
-# Laura Jiménez
+# Laura JimÃ©nez
 # May, 2019
 
 ### FUNCTIONS ----------
@@ -43,7 +43,7 @@ comp.accplot <- function(mods,nocc,ncells,xrange=c(0,ncells),sp.name,mods.names,
       points(pnts[j],sups[j],pch=20,col="grey25")
     }
     # add a legend to identify the different lines
-    #legend("bottomright",legend=c(mods.names,"Random counts","Hypergeometric-CI"),
+    legend("bottomright",legend=c(mods.names,"Random counts","Hypergeometric-CI"),
     #       pch=c(pt,NA,NA),col=c(colmod,"red","gray"),lwd=3)
   } else{
     print("Warning! 'mods' and 'mods.names' should have the same length")
